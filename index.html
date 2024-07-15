@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Senyo's 25 + 5 Clock</title>
+</head>
+<body>
+    <div class="main">
+        <h1 class="title">Senyo's 25 + 5 clock</h1>
+        <div class="buttons">
+            <div class="break">
+                <p id="break-label">Break Length</p>
+                <button id="break-increment">+</button>
+                <span id="break-length">5</span>
+                <button id="break-decrement">-</button>        
+            </div>
+            <div class="session">
+                <p id="session-label">Session Length</p>
+                <button id="session-increment">+</button>
+                <span id="session-length">25</span>
+                <button id="session-decrement">-</button>
+            </div>    
+        </div>
+        <div class="display">
+            <h3 id="timer-label">Session</h3>
+            <h1 id="time-left">25:00</h1>
+        </div>
+        <div class="controls">
+            <button id="start_stop">Start/Stop</button>
+            <button id="reset">Reset</button>
+        </div>
+        <audio id="beep" src="short-beep-tone.mp3" preload="auto"></audio>
+        <audio id="click" src="button-click.mp3" preload="auto"></audio>
+        <audio id="tick" src="click.mp3" preload="auto"></audio>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
