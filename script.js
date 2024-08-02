@@ -14,10 +14,10 @@ let timerInterval;
 let isPaused = true;
 let isBreak = false;
 
-// Load sounds
+/*Load sounds
 let beepSound = document.getElementById("beep"); //Beeping sound
 let clickSound  = document.getElementById("click"); //Clicking sound
-let tickSound = document.getElementById("tick"); //Ticking sound
+let tickSound = document.getElementById("tick");*/
 
 // Function to update the display with leading zeros
 function updateDisplay() {
