@@ -14,10 +14,7 @@ let timerInterval;
 let isPaused = true;
 let isBreak = false;
 
-/*Load sounds
 let beepSound = document.getElementById("beep"); //Beeping sound
-let clickSound  = document.getElementById("click"); //Clicking sound
-let tickSound = document.getElementById("tick");*/
 
 // Function to update the display with leading zeros
 function updateDisplay() {
@@ -30,7 +27,6 @@ function updateDisplay() {
 function countdown() {
     if (!isPaused) { // Only countdown if not paused
         seconds--; // Countdown seconds
-        tickSound.play();
 
         // Countdown minutes
         if (seconds < 0) {
@@ -167,27 +163,21 @@ function toggleMute() {
 // Add event listeners to the buttons
 startButton.addEventListener("click", function() {
     startTimer();
-    clickSound.play();
 });
 resetButton.addEventListener("click", function() {
     reset();
-    clickSound.play();
 });
 document.getElementById("break-increment").addEventListener("click", function() {
     increaseBreak();
-    clickSound.play();
 });
 document.getElementById("break-decrement").addEventListener("click", function() {
     decreaseBreak();
-    clickSound.play();
 });
 document.getElementById("session-increment").addEventListener("click", function() {
     increaseSession();
-    clickSound.play();
 });
 document.getElementById("session-decrement").addEventListener("click", function() {
     decreaseSession();
-    clickSound.play();
 });
 
 //muteButton.addEventListener("click", toggleMute);
